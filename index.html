@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Consulmarcas - Inicio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header fade-up">
+    <div class="container header-inner">
+      <a class="brand fade-up" href="#">
+        <img src="imagenes/logo.png" alt="Consulmarcas logo" class="brand-logo">
+      </a>
+
+      <button id="menu-btn" class="menu-btn fade-up" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav fade-up">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">¿Quiénes somos?</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nuestro Equipo</a></li>
+          <li><a href="#">Publicaciones</a></li>
+          <li><a href="#">Contáctanos</a></li>
+          <li><a href="#">Áreas de Práctica</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-inner container">
+      <h1 class="hero-title fade-up auto-animate delay-1">Trabaja con nosotros</h1>
+      <p class="hero-sub fade-up auto-animate delay-2">Soluciones innovadoras para el éxito empresarial</p>
+      <a class="cta fade-up auto-animate delay-3" href="#">Contáctanos</a>
+
+      <button class="scroll-down fade-up delay-3" id="scrollDown" aria-label="Bajar"> 
+        <i class="fas fa-chevron-down"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services container" id="services">
+    <h2 class="section-title fade-up">Protección total en propiedad intelectual, laboral y corporativa.</h2>
+
+    <div class="services-grid">
+      <article class="card fade-up">
+        <div class="card-icon"><i class="fas fa-trademark"></i></div>
+        <h3>PROPIEDAD INTELECTUAL</h3>
+        <p>Registro, protección y defensa de marcas, patentes y derechos de autor.</p>
+      </article>
+
+      <article class="card fade-up">
+        <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+        <h3>DERECHO SOCIETARIO</h3>
+        <p>Constitución y administración de compañías, fusiones y adquisiciones.</p>
+      </article>
+
+      <article class="card fade-up">
+        <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
+        <h3>DERECHO LABORAL</h3>
+        <p>Asesoría en contratación, políticas internas y resolución de conflictos.</p>
+      </article>
+
+      <article class="card fade-up">
+        <div class="card-icon"><i class="fas fa-gavel"></i></div>
+        <h3>RESOLUCIÓN DE CONFLICTOS</h3>
+        <p>Representación legal en litigios, arbitrajes y negociaciones.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="achievements">
+  <div class="container achievements-grid">
+
+    <div class="ach-item fade-up">
+      <h3 class="counter" data-target="3000">0</h3>
+      <p>Marcas registradas</p>
+    </div>
+
+    <div class="ach-item fade-up">
+      <h3 class="counter" data-target="10">0</h3>
+      <p>Años de experiencia</p>
+    </div>
+
+    <div class="ach-item fade-up">
+      <h3 class="counter" data-target="10">0</h3>
+      <p>Expertos legales</p>
+    </div>
+
+    <div class="ach-item fade-up">
+      <h3 class="counter" data-target="97">0</h3>
+      <p>Satisfacción de clientes (%)</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- SUBSCRIBE -->
+  <section class="subscribe container">
+    <div class="subscribe-inner fade-up">
+      <div class="subscribe-text fade-up">
+        <h2>SUSCRÍBETE Y MANTENTE CONECTADO</h2>
+        <p>Únete a nuestra comunidad para recibir noticias, vigilancias y promociones.</p>
+      </div>
+
+      <form id="subscribeForm" class="subscribe-form fade-up" novalidate>
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="text" name="empresa" placeholder="Empresa (opcional)">
+        <div class="subscribe-actions fade-up">
+          <button type="submit" class="btn">¡Regístrate Ahora!</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer fade-up">
+    <div class="container footer-grid">
+      <div class="fade-up">
+        <h4>Sobre nosotros</h4>
+        <p>Somos una firma especializada en distintas áreas del derecho,
+principalmente relacionado a todos los ejes de las empresas.
+Somos más que abogados, somos aliados estratégicos para
+el desarrollo de tu empresa.</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <h4>Contáctanos</h4>
+        <p><strong>Dirección:</strong> Víctor Manuel Rendón #600 y Escobedo, Edif. Bolívar</p>
+        <p><strong>Correo:</strong> legal@consucomlmarcas</p>
+        <p><strong>Tel:</strong> 0967800445</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom fade-up">
+      <p>© 2025 Consulmarcas.</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT BUTTON -->
+  <div class="whatsapp-float fade-up" id="whatsappFloat" title="Escríbenos por WhatsApp">
+    <a href="https://wa.me/591967800445" target="_blank" rel="noopener" class="whatsapp-link">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <script src="JS/app.js"></script>
+</body>
+</html>

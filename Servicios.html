@@ -1,75 +1,238 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Servicios - Consulmarcas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Servicios - Consulmarcas</title>
+
+  <!-- Tus estilos locales -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Librerías externas -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
 </head>
-
 <body>
+<!-- Menú lateral -->
+<nav class="mobile-nav">
+  <a href="/">Inicio</a>
+  <a href="/">Servicios</a>
+  <a href="/deportes">Nuestro Equipo</a>
+  <a href="/farandula">Publicaciones</a>
+  <a href="/contacto">Contáctanos</a>
+  <a href="/contacto">Áreas de Prácticas</a>
+</nav>
 
-<header class="header">
-    <div class="logo"><img src="img/logo.png" alt="Logo Consulmarcas"></div>
-    <div class="hamburger" id="hamburger"><i class="fa fa-bars"></i></div>
+<button class="menu-btn simple">
+   <span></span><span></span><span></span>
+</button>
 
-    <nav class="nav" id="nav">
-        <div class="close-btn" id="close-btn"><i class="fa fa-times"></i></div>
+  <!-- HEADER / NAV -->
+  <header class="site-header fade-up">
+    <div class="container header-inner">
+      <a class="brand fade-up" href="#">
+        <img src="imagenes/logo2.png" alt="Consulmarcas logo" class="brand-logo">
+      </a>
+
+      <button id="menu-btn" class="menu-btn fade-up" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav fade-up">
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienes.html">¿Quiénes Somos?</a></li>
-            <li><a class="active" href="servicios.html">Servicios</a></li>
-            <li><a href="equipo.html">Nuestro Equipo</a></li>
-            <li><a href="publicaciones.html">Publicaciones</a></li>
-            <li><a href="contacto.html">Contáctanos</a></li>
-            <li><a href="areas.html">Áreas de Práctica</a></li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="/Servicios.html">Servicios</a></li>
+          <li><a href="#">Nuestro Equipo</a></li>
+          <li><a href="#">Publicaciones</a></li>
+          <li><a href="#">Contáctanos</a></li>
+          <li><a href="#">Áreas de Práctica</a></li>
         </ul>
-    </nav>
-</header>
-
-<script>
-const ham = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
-const closeBtn = document.getElementById("close-btn");
-ham.onclick = () => nav.classList.add("open");
-closeBtn.onclick = () => nav.classList.remove("open");
-</script>
-
-<section class="content-section">
-    <div class="container">
-        <h1>Servicios</h1>
-        <p>Aquí encontrarás toda la información sobre nuestros servicios legales especializados.</p>
+      </nav>
     </div>
-</section>
+  </header>
 
-<footer class="footer">
-    <div class="container">
+  <!-- HERO principal de Servicios -->
+  <section class="services-hero">
+    <div class="services-hero-content">
+      <h1>Nuestros Servicios</h1>
+      <p>Avanzados por años de experiencia y éxito comprobado.</p>
+    </div>
+  </section>
 
-        <div class="footer-col"><h3>Sobre Nosotros</h3><p>Somos una firma especializada en distintas áreas del derecho...</p></div>
+  <!-- Carrusel de servicios -->
+  <section class="services-section">
 
-        <div class="footer-col"><h3>Servicios</h3><p>Corporativo, Propiedad Intelectual, Laboral, Comercio Exterior...</p></div>
+    <div id="owl-example" class="owl-carousel owl-theme">
 
-        <div class="footer-col">
-            <h3>Contactos</h3>
-            <p>legal@consulmarcas.com</p>
-            <p>0960690007</p>
-            <p>Guayaquil, Víctor Manuel Rendón #600 y Escobedo</p>
-        </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-trademark"></i></div>
+        <h3>Registro de Marcas y nombres comerciales</h3>
+        <p>Acompañamos tu registro de marca desde la búsqueda hasta su presentación y seguimiento legal.</p>
+        <button class="read-more-btn" data-service="marcas">
+          Conoce más <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
 
-        <div class="footer-col">
-            <h3>Síguenos</h3>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/company/consulmarcas/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://www.instagram.com/consulmarcas?igsh=MWNrdnQ1ajhqYXV2cQ==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://x.com/ConsulMarcas" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+        <h3>Patentes e Innovación</h3>
+        <p>Protegemos tus invenciones y patentes, gestionando todo el proceso de registro y asegurando su valor económico.</p>
+        <button class="read-more-btn" data-service="patentes">
+          Conoce más <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-book-open"></i></div>
+        <h3>Derechos de Autor</h3>
+        <p>Defendemos los derechos de autores y artistas, asegurando que su trabajo sea reconocido y protegido.</p>
+        <button class="read-more-btn" data-service="derechos">
+          Conoce más <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
+        <h3>Defensa Legal de Propiedad Intelectual</h3>
+        <p>Representamos y defendemos tus derechos en litigios de propiedad intelectual.</p>
+        <button class="read-more-btn" data-service="defensa">
+          Conoce más <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-landmark"></i></div>
+        <h3>Oposiciones y Tutelas Administrativas</h3>
+        <p>Defendemos tus derechos mediante oposiciones a registros que puedan afectar tus marcas o patentes.</p>
+        <button class="read-more-btn" data-service="oposiciones">
+          Conoce más <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-chess-rook"></i></div>
+        <h3>Consultoría y Estrategia</h3>
+        <p>Desarrollamos estrategias personalizadas para la protección y gestión de activos de propiedad intelectual.</p>
+        <button class="read-more-btn" data-service="consultoria">
+          Conoce más <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-file-contract"></i></div>
+        <h3>Transferencia de Tecnología y Licencias</h3>
+        <p>Asesoramos en la negociación y redacción de contratos de licencias y transferencia de tecnología.</p>
+        <button class="read-more-btn" data-service="licencias">
+          Conoce más <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Scripts del carrusel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+          margin: 18,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 3400,
+          responsive:{
+            0:{ items:1 },
+            600:{ items:2 },
+            1000:{ items:3 }
+          }
+        });
+      });
+    </script>
+
+  </section>
+
+  <!-- Sección: ¿Por qué elegirnos? (Debajo del carrusel) -->
+  <section class="about-hero philosophy">
+    <div class="about-title-container">
+      <span class="about-span">¿Por qué elegirnos?</span>
+      <h1 class="about-title">Sabemos la importancia de elegir a tu <span class="about-span">abogado de confianza</span></h1>
+    </div>
+
+    <div class="about-hero-flex">
+      <img src="images/imagen3.jpg" alt="Nuestra filosofía">
+      <div class="about-hero-content">
+        <p>Elegir ConsulMarcas significa optar por:</p>
+        <ul class="benefits-list">
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h3>Especialización Comprobada</h3>
+              <p>Nos enfocamos en lo que mejor hacemos: proteger y potenciar tus activos legales con un equipo experto en propiedad intelectual y derecho empresarial.</p>
             </div>
-        </div>
+          </li>
 
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h3>Resultados Garantizados</h3>
+              <p>Nuestra experiencia y dedicación nos han llevado a alcanzar altos índices de éxito en cada caso.</p>
+            </div>
+          </li>
+
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h3>Atención Personalizada</h3>
+              <p>Entendemos que cada cliente es único, por lo que adaptamos nuestras estrategias a tus necesidades específicas.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-</footer>
+  </section>
+
+  <!-- MODAL (si lo usas para "Conoce más") -->
+  <div class="service-more-modal-overlay">
+    <div class="service-more-modal">
+      <button class="close-more">&times;</button>
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER igual al index (sin modificar) -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Sobre nosotros</h4>
+        <p>Somos una firma especializada en distintas áreas del derecho,<br>
+          principalmente relacionado a todos los ejes de las empresas.<br>
+          Somos más que abogados, somos aliados estratégicos para <br>
+          el desarrollo de tu empresa.</p>
+
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contáctanos</h4>
+        <p><strong>Dirección:</strong> Víctor Manuel Rendón #600 y Escobedo, <br>Edificio Bolívar.📍</p>
+        <p><strong>Correo:</strong> legal@consucomlmarcas.📧</p>
+        <p><strong>Tel:</strong> 0967800445.📞</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Consulmarcas.</p>
+    </div>
+  </footer>
+
+  <!-- JS principal de tu web -->
+  <script type="module" src="js/main.js"></script>
 
 </body>
 </html>
-
-

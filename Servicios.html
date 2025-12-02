@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Consulmarcas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+    <div class="hamburger" id="hamburger"><i class="fa fa-bars"></i></div>
+    <nav class="nav" id="nav">
+        <div class="close-btn" id="close-btn"><i class="fa fa-times"></i></div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes.html">¿Quiénes somos?</a></li>
+            <li><a class="active" href="servicios.html">Servicios</a></li>
+            <li><a href="equipo.html">Nuestro Equipo</a></li>
+            <li><a href="publicaciones.html">Publicaciones</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+            <li><a href="areas.html">Áreas de Práctica</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    document.getElementById("hamburger").onclick = () => nav.classList.add("open");
+    document.getElementById("close-btn").onclick = () => nav.classList.remove("open");
+</script>
+
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones legales diseñadas para proteger y hacer crecer tu negocio.</p>
+    </div>
+</section>
+
+<section class="content-section">
+    <div class="container">
+        <h2>Áreas de Servicio</h2>
+        <ul class="highlight-list">
+            <li><strong>Propiedad Intelectual:</strong> Registro y defensa de marcas, patentes y derechos de autor.</li>
+            <li><strong>Derecho Societario:</strong> Asesoría en creación y administración de empresas.</li>
+            <li><strong>Derecho Laboral:</strong> Contratos, políticas internas y resolución de conflictos.</li>
+            <li><strong>Comercio Exterior:</strong> Asesoría en importaciones, exportaciones y normativa aduanera.</li>
+            <li><strong>Contratos:</strong> Redacción y revisión de contratos comerciales y civiles.</li>
+        </ul>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-col">
+            <h3>Sobre Nosotros</h3>
+            <p>Somos una firma especializada en distintas áreas del derecho...</p>
+        </div>
+        <div class="footer-col">
+            <h3>Contactos</h3>
+            <p>legal@consulmarcas.com</p>
+            <p>0960690007</p>
+        </div>
+        <div class="footer-col">
+            <h3>Síguenos</h3>
+            <a href="https://www.linkedin.com/company/consulmarcas/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.instagram.com/consulmarcas?igsh=MWNrdnQ1ajhqYXV2cQ==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://x.com/ConsulMarcas" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

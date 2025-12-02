@@ -3,156 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuestros Servicios - Consulmarcas</title>
+  <title>Servicios - Consulmarcas</title>
 
-  <!-- Tus estilos locales -->
+  <!-- Estilos locales -->
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Librerías externas -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-
 </head>
+
 <body>
-<!-- Menú lateral -->
-<nav class="mobile-nav">
-  <a href="/">Inicio</a>
-  <a href="/">Servicios</a>
-  <a href="/deportes">Nuestro Equipo</a>
-  <a href="/farandula">Publicaciones</a>
-  <a href="/contacto">Contáctanos</a>
-  <a href="/contacto">Áreas de Prácticas</a>
-</nav>
 
-<button class="menu-btn simple">
-   <span></span><span></span><span></span>
-</button>
+  <!-- Overlay (solo móvil) -->
+  <div class="mobile-nav-overlay"></div>
 
-  <!-- HEADER / NAV -->
-  <header class="site-header fade-up">
+  <!-- Menú lateral (solo móvil) -->
+  <nav class="mobile-nav">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="equipo.html">Nuestro Equipo</a>
+    <a href="publicaciones.html">Publicaciones</a>
+    <a href="contacto.html">Contáctanos</a>
+    <a href="areas.html">Áreas de Práctica</a>
+  </nav>
+
+  <!-- HEADER (PC sin cambios) -->
+  <header class="site-header">
     <div class="container header-inner">
-      <a class="brand fade-up" href="#">
+      <a class="brand" href="index.html">
         <img src="imagenes/logo2.png" alt="Consulmarcas logo" class="brand-logo">
       </a>
 
-      <button id="menu-btn" class="menu-btn fade-up" aria-label="Abrir menú">
+      <!-- Botón hamburguesa (solo visible en móvil por CSS) -->
+      <button id="mobile-menu-btn" class="menu-btn" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
 
-      <nav id="main-nav" class="main-nav fade-up">
+      <!-- Menú escritorio (PC intacto) -->
+      <nav id="main-nav" class="main-nav">
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="/Servicios.html">Servicios</a></li>
-          <li><a href="#">Nuestro Equipo</a></li>
-          <li><a href="#">Publicaciones</a></li>
-          <li><a href="#">Contáctanos</a></li>
-          <li><a href="#">Áreas de Práctica</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="equipo.html">Nuestro Equipo</a></li>
+          <li><a href="publicaciones.html">Publicaciones</a></li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+          <li><a href="areas.html">Áreas de Práctica</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- HERO principal de Servicios -->
+  <!-- HERO -->
   <section class="services-hero">
     <div class="services-hero-content">
-      <h1>Nuestros Servicios</h1>
-      <p>Avanzados por años de experiencia y éxito comprobado.</p>
+      <h1 class="text-shadow">Nuestros Servicios</h1>
+      <p class="text-shadow">Protección legal inteligente para marcas, patentes y más.</p>
     </div>
   </section>
 
-  <!-- Carrusel de servicios -->
+  <!-- CARRUSEL -->
   <section class="services-section">
-
-    <div id="owl-example" class="owl-carousel owl-theme">
-
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-trademark"></i></div>
-        <h3>Registro de Marcas y nombres comerciales</h3>
-        <p>Acompañamos tu registro de marca desde la búsqueda hasta su presentación y seguimiento legal.</p>
-        <button class="read-more-btn" data-service="marcas">
-          Conoce más <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
-        <h3>Patentes e Innovación</h3>
-        <p>Protegemos tus invenciones y patentes, gestionando todo el proceso de registro y asegurando su valor económico.</p>
-        <button class="read-more-btn" data-service="patentes">
-          Conoce más <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-book-open"></i></div>
-        <h3>Derechos de Autor</h3>
-        <p>Defendemos los derechos de autores y artistas, asegurando que su trabajo sea reconocido y protegido.</p>
-        <button class="read-more-btn" data-service="derechos">
-          Conoce más <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
-        <h3>Defensa Legal de Propiedad Intelectual</h3>
-        <p>Representamos y defendemos tus derechos en litigios de propiedad intelectual.</p>
-        <button class="read-more-btn" data-service="defensa">
-          Conoce más <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-landmark"></i></div>
-        <h3>Oposiciones y Tutelas Administrativas</h3>
-        <p>Defendemos tus derechos mediante oposiciones a registros que puedan afectar tus marcas o patentes.</p>
-        <button class="read-more-btn" data-service="oposiciones">
-          Conoce más <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-chess-rook"></i></div>
-        <h3>Consultoría y Estrategia</h3>
-        <p>Desarrollamos estrategias personalizadas para la protección y gestión de activos de propiedad intelectual.</p>
-        <button class="read-more-btn" data-service="consultoria">
-          Conoce más <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon"><i class="fas fa-file-contract"></i></div>
-        <h3>Transferencia de Tecnología y Licencias</h3>
-        <p>Asesoramos en la negociación y redacción de contratos de licencias y transferencia de tecnología.</p>
-        <button class="read-more-btn" data-service="licencias">
-          Conoce más <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-
+    <div id="owl-services" class="owl-carousel owl-theme">
+      <div class="service-card"><div class="service-icon"><i class="fas fa-trademark"></i></div><h3>Registro de Marcas</h3><p>Desde búsqueda hasta seguimiento legal.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-cogs"></i></div><h3>Patentes</h3><p>Protegemos tu innovación.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-book"></i></div><h3>Derechos de Autor</h3><p>Defensa de obras y creaciones.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-shield-alt"></i></div><h3>Defensa Legal</h3><p>Litigios en propiedad intelectual.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-lightbulb"></i></div><h3>Consultoría</h3><p>Estrategias personalizadas.</p></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-file-contract"></i></div><h3>Licencias</h3><p>Contratos y negociación.</p></div>
     </div>
-
-    <!-- Scripts del carrusel -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-          margin: 18,
-          loop: true,
-          autoplay: true,
-          autoplayTimeout: 3400,
-          responsive:{
-            0:{ items:1 },
-            600:{ items:2 },
-            1000:{ items:3 }
-          }
-        });
-      });
-    </script>
-
   </section>
 
-  <!-- Sección: ¿Por qué elegirnos? (Debajo del carrusel) -->
+  <!-- ¿POR QUÉ ELEGIRNOS? -->
   <section class="about-hero philosophy">
     <div class="about-title-container">
       <span class="about-span">¿Por qué elegirnos?</span>
@@ -160,57 +83,29 @@
     </div>
 
     <div class="about-hero-flex">
-      <img src="images/imagen3.jpg" alt="Nuestra filosofía">
+      <img src="imagenes/servicos.jpg" alt="Nuestra filosofía">
       <div class="about-hero-content">
         <p>Elegir ConsulMarcas significa optar por:</p>
         <ul class="benefits-list">
-          <li>
-            <i class="fas fa-check-circle"></i>
-            <div>
-              <h3>Especialización Comprobada</h3>
-              <p>Nos enfocamos en lo que mejor hacemos: proteger y potenciar tus activos legales con un equipo experto en propiedad intelectual y derecho empresarial.</p>
-            </div>
-          </li>
-
-          <li>
-            <i class="fas fa-check-circle"></i>
-            <div>
-              <h3>Resultados Garantizados</h3>
-              <p>Nuestra experiencia y dedicación nos han llevado a alcanzar altos índices de éxito en cada caso.</p>
-            </div>
-          </li>
-
-          <li>
-            <i class="fas fa-check-circle"></i>
-            <div>
-              <h3>Atención Personalizada</h3>
-              <p>Entendemos que cada cliente es único, por lo que adaptamos nuestras estrategias a tus necesidades específicas.</p>
-            </div>
-          </li>
+          <li><i class="fas fa-check-circle"></i><div><h3>Especialización Comprobada</h3><p>Nos enfocamos en lo que mejor hacemos: proteger y potenciar tus activos legales con un equipo experto en propiedad intelectual y derecho empresarial</p></div></li>
+          <li><i class="fas fa-check-circle"></i><div><h3>Resultados Garantizados</h3><p>Nuestra experiencia y dedicación nos han llevado a alcanzar altos índices de éxito en cada caso.</p></div></li>
+          <li><i class="fas fa-check-circle"></i><div><h3>Atención Personalizada</h3><p>Entendemos que cada cliente es único, por lo que adaptamos nuestras estrategias a tus necesidades específicas.</p></div></li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- MODAL (si lo usas para "Conoce más") -->
-  <div class="service-more-modal-overlay">
-    <div class="service-more-modal">
-      <button class="close-more">&times;</button>
-      <div class="modal-content"></div>
-    </div>
-  </div>
-
-  <!-- FOOTER igual al index (sin modificar) -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
+  <!-- FOOTER (igual al index, corregido y sin cambios visuales) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
         <h4>Sobre nosotros</h4>
-        <p>Somos una firma especializada en distintas áreas del derecho,<br>
-          principalmente relacionado a todos los ejes de las empresas.<br>
-          Somos más que abogados, somos aliados estratégicos para <br>
-          el desarrollo de tu empresa.</p>
+        <p>Somos una firma especializada en distintas áreas del derecho,
+principalmente relacionado a todos los ejes de las empresas.
+Somos más que abogados, somos aliados estratégicos para
+el desarrollo de tu empresa.</p>
 
-        <div class="social-links">
+        <div class="socials">
           <a href="#"><i class="fab fa-facebook"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
@@ -218,21 +113,62 @@
         </div>
       </div>
 
-      <div class="footer-section">
+      <div>
         <h4>Contáctanos</h4>
-        <p><strong>Dirección:</strong> Víctor Manuel Rendón #600 y Escobedo, <br>Edificio Bolívar.📍</p>
-        <p><strong>Correo:</strong> legal@consucomlmarcas.📧</p>
-        <p><strong>Tel:</strong> 0967800445.📞</p>
+        <p><strong>Dirección:</strong> Víctor Manuel Rendón #600 y Escobedo, Edif. Bolívar</p>
+        <p><strong>Correo:</strong> legal@consucomlmarcas</p>
+        <p><strong>Tel:</strong> 0967800445</p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; 2025 Consulmarcas.</p>
+      <p>© 2025 Consulmarcas.</p>
     </div>
   </footer>
 
-  <!-- JS principal de tu web -->
-  <script type="module" src="js/main.js"></script>
+  <!-- WhatsApp float -->
+  <div class="whatsapp-float" id="whatsappFloat">
+    <a href="https://wa.me/591967800445" target="_blank" rel="noopener" class="whatsapp-link">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $("#owl-services").owlCarousel({
+        margin: 18,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3400,
+        responsive:{
+          0:{ items:1 },
+          600:{ items:2 },
+          1000:{ items:3 }
+        }
+      });
+    });
+
+    // Menú lateral solo móvil (sin afectar PC)
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.querySelector(".mobile-nav");
+    const overlay = document.querySelector(".mobile-nav-overlay");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("open");
+      overlay.classList.toggle("show");
+    });
+
+    overlay.addEventListener("click", () => {
+      menu.classList.remove("open");
+      overlay.class.remove("show");
+    });
+  </script>
+
+  <script src="JS/app.js"></script>
 
 </body>
 </html>

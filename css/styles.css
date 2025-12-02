@@ -532,7 +532,8 @@ text-shadow:  0px 0px 20px   #ffffffea ;}
 
 /* ======== HERO DE SERVICIOS ======== */
 .services-hero {
-  background: var(--primary);
+  background: linear-gradient(to bottom, #0265d6, #050c16ef);
+  
   height: 320px;
   display: flex;
   justify-content: center;
@@ -668,5 +669,152 @@ text-shadow:  0px 0px 20px   #ffffffea ;}
   .read-more-btn {
     font-size: 14px;
     padding: 10px;
+  }
+}
+
+/* === SECCIÓN ¿POR QUÉ ELEGIRNOS? === */
+.about-hero.philosophy {
+  padding: 60px 20px;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* TÍTULO */
+.about-title-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-span {
+  color: #ffffff;
+  background: linear-gradient(to right, #034188, #0d90e7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.15); /* sombra para letra */
+}
+
+.about-title {
+  color: #0f1720;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 8px;
+  line-height: 1.3;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.18);
+}
+
+.about-title .about-span {
+  font-size: 32px;
+}
+
+/* CONTENIDO FLEX (IMAGEN + TEXTO) */
+.about-hero-flex {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-hero-flex img {
+  width: 40%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* CAJA DE TEXTO */
+.about-hero-content {
+  width: 55%;
+}
+
+.about-hero-content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.14);
+}
+
+/* LISTA DE BENEFICIOS */
+.benefits-list {
+  list-style: none;
+  display: grid;
+  gap: 18px;
+  padding: 0;
+}
+
+/* Cada ITEM */
+.benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #eff0f1;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.benefits-list li:hover {
+  transform: translateX(6px);
+  box-shadow: 0 5px 16px rgba(0,0,0,0.10);
+}
+
+/* ICONO ✔ */
+.benefits-list i {
+  font-size: 26px;
+  color: #ff6600;
+  margin-top: 4px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Títulos de cada beneficio */
+.benefits-list h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+/* texto pequeño descripción */
+.benefits-list p {
+  font-size: 15px;
+  color: #4b4f57;
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.06);
+}
+
+/* === RESPONSIVE SIMPLE 2 → 3 COLUMNAS === */
+
+/* 📱 1 columna en celulares */
+@media (max-width: 600px) {
+  .about-hero-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .about-hero-flex img,
+  .about-hero-content {
+    width: 100%;
+  }
+}
+
+/* 🖥 2 columnas en tablets*/
+@media (min-width: 601px) and (max-width: 1024px) {
+  .benefits-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 💻 3 columnas en pantallas grandes */
+@media (min-width: 1025px) {
+  .benefits-list {
+    grid-template-columns: repeat( 1fr);
   }
 }

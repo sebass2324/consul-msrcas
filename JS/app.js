@@ -61,3 +61,27 @@ function checkCounters() {
 
 window.addEventListener("scroll", checkCounters);
 window.addEventListener("load", checkCounters);
+
+const menuBtn = document.getElementById('menu-btn');
+const mainNav = document.getElementById('main-nav');
+
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('active');
+  mainNav.classList.toggle('active');
+});
+
+const btn = document.querySelector(".menu-btn");
+  const menu = document.querySelector(".mobile-nav");
+  const overlay = document.querySelector(".mobile-nav-overlay");
+
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("active");
+    menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
+
+  overlay.addEventListener("click", () => {
+    btn.classList.remove("active");
+    menu.classList.remove("active");
+    overlay.classList.remove("active");
+  });

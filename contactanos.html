@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Consulmarcas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+    <div class="hamburger" id="hamburger"><i class="fa fa-bars"></i></div>
+    <nav class="nav" id="nav">
+        <div class="close-btn" id="close-btn"><i class="fa fa-times"></i></div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes.html">¿Quiénes somos?</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="equipo.html">Nuestro Equipo</a></li>
+            <li><a href="publicaciones.html">Publicaciones</a></li>
+            <li><a class="active" href="contacto.html">Contáctanos</a></li>
+            <li><a href="areas.html">Áreas de Práctica</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    document.getElementById("hamburger").onclick = () => nav.classList.add("open");
+    document.getElementById("close-btn").onclick = () => nav.classList.remove("open");
+</script>
+
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte.</p>
+    </div>
+</section>
+
+<section class="content-section">
+    <div class="container">
+        <h2>Información de Contacto</h2>
+        <p>📧 legal@consulmarcas.com</p>
+        <p>📞 0960690007</p>
+        <p>📍 Guayaquil, Víctor Manuel Rendón #600 y Escobedo</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-col">
+            <h3>Sobre Nosotros</h3>
+            <p>Somos una firma especializada en distintas áreas del derecho...</p>
+        </div>
+        <div class="footer-col">
+            <h3>Contáctanos</h3>
+            <p>legal@consulmarcas.com</p>
+        </div>
+        <div class="footer-col">
+            <h3>Síguenos</h3>
+            <a href="https://www.linkedin.com/company/consulmarcas/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.instagram.com/consulmarcas?igsh=MWNrdnQ1ajhqYXV2cQ==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://x.com/ConsulMarcas" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

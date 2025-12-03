@@ -311,6 +311,8 @@ margin: 0;}
 @media (min-width: 1024px) {
   .mobile-nav,
   .mobile-nav-overlay {
-    display: none !important;
+    display: none ;
   }
 }
+
+a{ text-decoration: none;}

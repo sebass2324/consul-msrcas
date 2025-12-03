@@ -1,108 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Áreas de Práctica - Consulmarcas</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
-  <!-- MENÚ -->
-  <header class="site-header">
+  <div class="mobile-nav-overlay"></div>
+
+  <!-- Menú lateral móvil -->
+  <nav class="mobile-nav">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="equipo.html">Nuestro Equipo</a>
+    <a href="publicaciones.html">Publicaciones</a>
+    <a href="contactanos.html">Contáctanos</a>
+    <a href="areas.html">Áreas de Práctica</a>
+  </nav>
+
+  <button class="menu-btn simple">
+      <span></span><span></span><span></span>
+  </button>
+
+  <!-- HEADER -->
+  <header class="site-header fade-up">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand fade-up" href="index.html">
         <img src="imagenes/logo2.png" alt="Consulmarcas logo" class="brand-logo">
       </a>
 
-      <nav class="main-nav">
+      <button id="menu-btn" class="menu-btn fade-up" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav fade-up">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="equipo.html">Nuestro Equipo</a></li>
           <li><a href="publicaciones.html">Publicaciones</a></li>
           <li><a href="contactanos.html">Contáctanos</a></li>
-          <li><a class="active" href="áreas.html">Áreas de Práctica</a></li>
+          <li><a href="areas.html" class="active">Áreas de Práctica</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- IMAGEN PRINCIPAL -->
-  <section class="hero-interno">
-    <img src="imagenes/desarrollo-de-software-senati-1800-x-1190_0.jpg" 
-         alt="Áreas de práctica" 
-         style="width:100%; display:block;">
+  <!-- HERO con tu imagen -->
+  <section class="hero small-hero" 
+    style="background-image: url('imagenes/desarrollo-de-software-senati-1800-x-1190_0.jpg');
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner container">
+      <h1 class="hero-title fade-up">Áreas de Práctica</h1>
+      <p class="hero-sub fade-up">Conocimiento profundo, experiencia y estrategia para cada necesidad legal.</p>
+    </div>
   </section>
 
   <!-- CONTENIDO -->
-  <section class="container" style="padding: 40px 0;">
-    <h1 class="section-title">Áreas de Práctica</h1>
+  <section class="container services area-practice">
 
-    <div class="areas-content">
+    <h2 class="section-title fade-up">Nuestras áreas especializadas</h2>
 
-      <h2>Propiedad Intelectual</h2>
-      <p>Ofrecemos asesoría y gestión en todos los aspectos relacionados con la propiedad intelectual, garantizando la protección legal de tus creaciones. Nuestros servicios incluyen el registro de marcas, patentes, derechos de autor y diseños industriales, así como la defensa ante infracciones y litigios. Además, brindamos acompañamiento en la negociación y redacción de contratos de cesión y licencias.</p>
+    <div class="services-grid">
 
-      <h2>Civil</h2>
-      <p>Asesoramos en todas las ramas del derecho civil, incluyendo contratos, responsabilidad civil, propiedad, herencias, y otros asuntos personales y familiares. Nuestro enfoque es ofrecer soluciones legales precisas y personalizadas para proteger tus derechos y alcanzar los mejores resultados posibles.</p>
+      <article class="card fade-up">
+        <h3>Propiedad Intelectual</h3>
+        <p>
+          Ofrecemos asesoría en registro de marcas, patentes, derechos de autor, diseños industriales y defensa ante infracciones. También gestionamos contratos de cesión y licencias.
+        </p>
+      </article>
 
-      <h2>Comercio Internacional</h2>
-      <p>Brindamos asesoría especializada en comercio internacional, ayudando a empresas a navegar la complejidad de los mercados globales. Asesoramos en contratos internacionales, cumplimiento normativo, aduanas y resolución de disputas comerciales transfronterizas.</p>
+      <article class="card fade-up">
+        <h3>Civil</h3>
+        <p>Asesoría en contratos, responsabilidad civil, propiedad, herencias y otros asuntos personales y familiares.</p>
+      </article>
 
-      <h2>Competencia</h2>
-      <p>Protegemos tus intereses en el ámbito de la competencia económica, asesorándote en prácticas comerciales justas, procedimientos ante autoridades regulatorias, y defensa ante reclamaciones de competencia desleal.</p>
+      <article class="card fade-up">
+        <h3>Comercio Internacional</h3>
+        <p>
+          Asistencia en contratos internacionales, cumplimiento normativo, aduanas y solución de disputas comerciales transfronterizas.
+        </p>
+      </article>
 
-      <h2>Contratación Pública</h2>
-      <p>Ofrecemos asesoría completa en procesos de contratación pública, revisión de pliegos, participación en licitaciones y resolución de controversias, garantizando cumplimiento normativo y eficiencia.</p>
+      <article class="card fade-up">
+        <h3>Competencia</h3>
+        <p>
+          Asesoría en prácticas comerciales justas, procedimientos regulatorios y defensa en casos de competencia desleal.
+        </p>
+      </article>
 
-      <h2>Fusiones y Adquisiciones</h2>
-      <p>Acompañamos integralmente procesos de fusiones y adquisiciones desde la due diligence hasta el cierre de acuerdos. Minimización de riesgos y maximización del valor en cada operación.</p>
+      <article class="card fade-up">
+        <h3>Contratación Pública</h3>
+        <p>
+          Acompañamiento en procesos de licitaciones, revisión de pliegos, cumplimiento normativo y resolución de controversias.
+        </p>
+      </article>
 
-      <h2>Laboral</h2>
-      <p>Brindamos asesoría laboral tanto a empleadores como trabajadores en contratación, despidos, negociaciones colectivas y resolución de conflictos laborales.</p>
+      <article class="card fade-up">
+        <h3>Fusiones y Adquisiciones</h3>
+        <p>
+          Asesoría integral desde la due diligence hasta el cierre de acuerdos, garantizando eficiencia y minimizando riesgos.
+        </p>
+      </article>
 
-      <h2>Mediación y Resolución de Conflictos</h2>
-      <p>Promovemos soluciones rápidas y efectivas mediante métodos alternativos como mediación y arbitraje, evitando procesos judiciales largos y costosos.</p>
+      <article class="card fade-up">
+        <h3>Laboral</h3>
+        <p>
+          Asesoría en contratación, despidos, negociaciones colectivas y defensa en conflictos laborales para empleadores y empleados.
+        </p>
+      </article>
 
-      <h2>Protección de Datos Personales</h2>
-      <p>Asesoramos en el cumplimiento normativo sobre manejo de datos personales, creación de políticas de privacidad y respuesta ante incidentes o brechas de seguridad.</p>
+      <article class="card fade-up">
+        <h3>Mediación y Resolución de Conflictos</h3>
+        <p>
+          Soluciones rápidas y efectivas mediante mediación, arbitraje y otros métodos alternativos al litigio tradicional.
+        </p>
+      </article>
 
-      <h2>Publicitario y Mercadeo</h2>
-      <p>Brindamos asesoría en regulación y cumplimiento de normas en publicidad y mercadeo para proteger la reputación y evitar sanciones legales.</p>
+      <article class="card fade-up">
+        <h3>Protección de Datos Personales</h3>
+        <p>
+          Implementación de políticas, cumplimiento normativo y asesoría ante brechas de seguridad en manejo de información.
+        </p>
+      </article>
 
-      <h2>Societario y Mercantil</h2>
-      <p>Asesoría en constitución, gestión y reestructuración de sociedades, así como negociación y elaboración de contratos mercantiles para garantizar eficiencia y cumplimiento legal.</p>
+      <article class="card fade-up">
+        <h3>Publicitario y Mercadeo</h3>
+        <p>
+          Asesoría en regulación y cumplimiento de normas para campañas publicitarias y estrategias de mercadeo.
+        </p>
+      </article>
 
-      <h2>Penal</h2>
-      <p>Ofrecemos defensa y asesoría integral en materia penal, representando a clientes en investigaciones, juicios, apelaciones y recursos. Protegemos tus derechos y buscamos siempre la mejor resolución.</p>
+      <article class="card fade-up">
+        <h3>Societario y Mercantil</h3>
+        <p>
+          Gestión, constitución y reestructuración de empresas, además de redacción y negociación de contratos mercantiles.
+        </p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Penal</h3>
+        <p>
+          Defensa en casos penales, representación en investigaciones, juicios y apelaciones, buscando siempre la mejor estrategia legal.
+        </p>
+      </article>
 
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>Sobre nosotros</h4>
-        <p>Somos aliados estratégicos para el desarrollo empresarial, ofreciendo asesoría legal en múltiples áreas.</p>
-      </div>
-
-      <div>
-        <h4>Contáctanos</h4>
-        <p><strong>Dirección:</strong> Víctor Manuel Rendón #600 y Escobedo</p>
-        <p><strong>Correo:</strong> legal@consulmarcas.com</p>
-        <p><strong>Tel:</strong> 0967800445</p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2025 Consulmarcas.</p>
-    </div>
-  </footer>
-
+  <script src="JS/app.js"></script>
 </body>
 </html>

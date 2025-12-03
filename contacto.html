@@ -1,74 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contáctanos - Consulmarcas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consulmarcas - Contáctanos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/contactos.css"> </head>
 
 <body>
+    <div class="mobile-nav-overlay"></div>
 
-<header class="header">
-    <div class="logo"><img src="img/logo.png" alt="Logo Consulmarcas"></div>
-    <div class="hamburger" id="hamburger"><i class="fa fa-bars"></i></div>
-
-    <nav class="nav" id="nav">
-        <div class="close-btn" id="close-btn"><i class="fa fa-times"></i></div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienes.html">¿Quiénes Somos?</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="equipo.html">Nuestro Equipo</a></li>
-            <li><a href="publicaciones.html">Publicaciones</a></li>
-            <li><a class="active" href="contacto.html">Contáctanos</a></li>
-            <li><a href="areas.html">Áreas de Práctica</a></li>
-        </ul>
+    <nav class="mobile-nav">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="equipo.html">Nuestro Equipo</a>
+        <a href="publicaciones.html">Publicaciones</a>
+        <a href="contacto.html" class="active">Contáctanos</a>
+        <a href="areas.html">Áreas de Práctica</a>
     </nav>
-</header>
 
-<script>
-const ham = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
-const closeBtn = document.getElementById("close-btn");
-ham.onclick = () => nav.classList.add("open");
-closeBtn.onclick = () => nav.classList.remove("open");
-</script>
+    <button class="menu-btn simple">
+        <span></span><span></span><span></span>
+    </button>
 
-<section class="content-section">
-    <div class="container">
-        <h1>Contáctanos</h1>
-        <p>Puedes comunicarte con nosotros a través del siguiente formulario o por nuestros canales oficiales.</p>
-    </div>
-</section>
+    <header class="site-header fade-up">
+        <div class="container header-inner">
+            <a class="brand fade-up" href="index.html">
+                <img src="imagenes/logo2.png" alt="Consulmarcas logo" class="brand-logo">
+            </a>
 
-<footer class="footer">
-    <div class="container">
+            <button id="menu-btn" class="menu-btn fade-up" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
 
-        <div class="footer-col"><h3>Sobre Nosotros</h3><p>Somos una firma especializada en distintas áreas del derecho...</p></div>
-
-        <div class="footer-col"><h3>Servicios</h3><p>Corporativo, Propiedad Intelectual, Laboral, Comercio Exterior...</p></div>
-
-        <div class="footer-col">
-            <h3>Contactos</h3>
-            <p>legal@consulmarcas.com</p>
-            <p>0960690007</p>
-            <p>Guayaquil, Víctor Manuel Rendón #600 y Escobedo</p>
+            <nav id="main-nav" class="main-nav fade-up">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="equipo.html">Nuestro Equipo</a></li>
+                    <li><a href="publicaciones.html">Publicaciones</a></li>
+                    <li><a href="contacto.html" class="active">Contáctanos</a></li> <li><a href="areas.html">Áreas de Práctica</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="footer-col">
-            <h3>Síguenos</h3>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/company/consulmarcas/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://www.instagram.com/consulmarcas?igsh=MWNrdnQ1ajhqYXV2cQ==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://x.com/ConsulMarcas" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
+    <main>
+        <section class="contact-hero fade-up">
+            <div class="contact-hero-content container">
+                <div class="contact-hero-text">
+                    <span class="contact-badge fade-up delay-1">Contáctanos Hoy</span>
+                    <h1 class="fade-up delay-2">¿Listo para proteger tu <span class="gradient-text">propiedad intelectual</span>?</h1>
+                    <p class="contact-subtitle fade-up delay-3">Agenda una consulta gratuita y descubre cómo podemos ayudarte a salvaguardar tus activos más valiosos.</p>
+                </div>
+                <div class="contact-hero-image fade-up delay-4">
+                    <img src="imagenes/layer2.jpg" alt="Contacto Consulmarcas">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-container container">
+                <div class="contact-info-cards">
+                    <div class="info-card fade-up">
+                        <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-card-content">
+                            <h3>Ubicación</h3>
+                            <p>Víctor Manuel Rendón #600 y Escobedo<br>Edificio Bolívar.</p>
+                        </div>
+                    </div>
+                    <div class="info-card fade-up delay-1">
+                        <div class="info-card-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info-card-content">
+                            <h3>Teléfono</h3>
+                            <p>0967800445</p>
+                        </div>
+                    </div>
+                    <div class="info-card fade-up delay-2">
+                        <div class="info-card-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-card-content">
+                            <h3>Email</h3>
+                            <p>legal@consucomlmarcas</p>
+                        </div>
+                    </div>
+                    <div class="info-card fade-up delay-3">
+                        <div class="info-card-icon"><i class="fas fa-clock"></i></div>
+                        <div class="info-card-content">
+                            <h3>Horario de Atención</h3>
+                            <p>Lunes a Viernes<br>9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-connect fade-up">
+                    <h2>Conéctate con Nosotros</h2>
+                    <p>Síguenos en nuestras redes sociales para mantenerte informado sobre las últimas novedades en propiedad intelectual.</p>
+                    <div class="social-grid">
+                        <a href="https://www.facebook.com/consulmarcas/" class="social-card facebook fade-up delay-1"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+                        <a href="https://www.instagram.com/consulmarcas?igsh=MWNrdnQ1ajhqYXV2cQ==" class="social-card instagram fade-up delay-2"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                        <a href="https://x.com/ConsulMarcas" class="social-card twitter fade-up delay-3"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+                        <a href="https://www.linkedin.com/company/consulmarcas/" class="social-card linkedin fade-up delay-4"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="form-container fade-up">
+                <div class="form-header">
+                    <h2>Envíanos un Mensaje</h2>
+                    <p>Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group"><label for="name">Nombre Completo</label><input type="text" id="name" name="name" required></div>
+                        <div class="form-group"><label for="email">Correo Electrónico</label><input type="email" id="email" name="email" required></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group"><label for="phone">Teléfono</label><input type="tel" id="phone" name="phone"></div>
+                        <div class="form-group">
+                            <label for="service">Servicio de Interés</label>
+                            <select id="service" name="service" required>
+                                <option value="">Seleccione un servicio</option>
+                                <option value="marcas">Registro de Marcas</option>
+                                <option value="patentes">Patentes e Innovación</option>
+                                <option value="defensa">Litigios y Resolución de Disputas</option>
+                                <option value="consultoria">Consultoría y Estrategia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer fade-up">
+        <div class="container footer-grid">
+            <div class="fade-up">
+                <h4>Sobre nosotros</h4>
+                <p>Somos una firma especializada en distintas áreas del derecho,
+    principalmente relacionado a todos los ejes de las empresas.
+    Somos más que abogados, somos aliados estratégicos para
+    el desarrollo de tu empresa.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="fade-up">
+                <h4>Contáctanos</h4>
+                <p><strong>Dirección:</strong> Víctor Manuel Rendón #600 y Escobedo, Edif. Bolívar</p>
+                <p><strong>Correo:</strong> legal@consucomlmarcas</p>
+                <p><strong>Tel:</strong> 0967800445</p>
             </div>
         </div>
 
-    </div>
-</footer>
+        <div class="footer-bottom fade-up">
+            <p>© 2025 Consulmarcas.</p>
+        </div>
+    </footer>
 
+    <div class="whatsapp-float fade-up" id="whatsappFloat" title="Escríbenos por WhatsApp">
+        <a href="https://wa.me/591967800445" target="_blank" rel="noopener" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="JS/app.js"></script>
 </body>
 </html>
-

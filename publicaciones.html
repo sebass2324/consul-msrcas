@@ -1,73 +1,259 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Publicaciones - Consulmarcas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Consulmarcas - Publicaciones</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        /* ==================================== */
+        /* 1. AJUSTE Y MEJORA DE CABECERA (HERO) */
+        /* ==================================== */
+        .publicaciones-hero {
+            background-color: #0d47a1; 
+            color: white;
+            /* AUMENTO DEL PADDING SUPERIOR E INFERIOR para evitar que se pegue al menú */
+            padding: 100px 0; 
+            text-align: center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .publicaciones-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .publicaciones-hero-inner {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .pub-hero-title {
+            font-size: 3.2em; /* Título más grande y con más impacto */
+            font-weight: 800;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .title-mantente {
+            font-size: 1.4em; /* Subtítulo más prominente */
+            color: #ff9800; 
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 3px; /* Más espaciado para un look moderno */
+        }
+
+        .title-consulmarcas {
+            color: #ff9800;
+        }
+
+        .title-underline {
+            display: block;
+            width: 80px; /* Línea más larga */
+            height: 4px; /* Línea más gruesa */
+            background-color: #ff9800;
+            margin: 10px auto 20px auto;
+            border-radius: 2px;
+        }
+
+        /* ==================================== */
+        /* 2. DISEÑO CREATIVO DE INTRODUCCIÓN */
+        /* ==================================== */
+
+        .intro-publicaciones {
+            padding: 80px 20px;
+            background-color: white; /* Fondo blanco limpio */
+        }
+
+        .intro-publicaciones-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr; /* Texto un poco más ancho que la imagen */
+            gap: 60px; /* Más espacio entre los elementos */
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: flex-start; /* Alineación superior */
+        }
+        
+        /* Contenedor del texto mejorado */
+        .pub-text {
+            padding: 20px;
+            /* Border izquierdo naranja para un toque moderno y de contraste */
+            border-left: 5px solid #ff9800; 
+        }
+
+        .pub-text p {
+            font-size: 1.2em; /* Texto más grande y legible */
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .pub-text strong {
+            color: #0d47a1; /* Resalta en azul las palabras clave */
+            font-weight: 700;
+        }
+        
+        /* Contenedor de la imagen más dinámico */
+        .pub-image-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra más profunda */
+            transform: translateY(10px); /* Ligero desplazamiento para un efecto flotante */
+            transition: transform 0.3s ease;
+        }
+        /* Efecto hover opcional */
+        .pub-image-container:hover {
+            transform: translateY(0); 
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .pub-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .intro-publicaciones-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .pub-hero-title {
+                font-size: 2.5em;
+            }
+            .pub-image-container {
+                order: -1; 
+                transform: translateY(0); /* Desactivar efecto en móvil */
+            }
+        }
+    </style>
+</head>
 <body>
 
-<header class="header">
-    <div class="logo"><img src="img/logo.png" alt="Logo Consulmarcas"></div>
-    <div class="hamburger" id="hamburger"><i class="fa fa-bars"></i></div>
+    <div class="mobile-nav-overlay"></div>
 
-    <nav class="nav" id="nav">
-        <div class="close-btn" id="close-btn"><i class="fa fa-times"></i></div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienes.html">¿Quiénes Somos?</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="equipo.html">Nuestro Equipo</a></li>
-            <li><a class="active" href="publicaciones.html">Publicaciones</a></li>
-            <li><a href="contacto.html">Contáctanos</a></li>
-            <li><a href="areas.html">Áreas de Práctica</a></li>
-        </ul>
+    <nav class="mobile-nav">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="equipo.html">Nuestro Equipo</a>
+        <a href="publicaciones.html" class="active">Publicaciones</a>
+        <a href="contacto.html">Contáctanos</a>
+        <a href="areas.html">Áreas de Práctica</a>
     </nav>
-</header>
 
-<script>
-const ham = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
-const closeBtn = document.getElementById("close-btn");
-ham.onclick = () => nav.classList.add("open");
-closeBtn.onclick = () => nav.classList.remove("open");
-</script>
+    <button class="menu-btn simple">
+        <span></span><span></span><span></span>
+    </button>
 
-<section class="content-section">
-    <div class="container">
-        <h1>Publicaciones</h1>
-        <p>Aquí podrás encontrar artículos, noticias y boletines legales.</p>
-    </div>
-</section>
+    <header class="site-header fade-up">
+        <div class="container header-inner">
+            <a class="brand fade-up" href="index.html">
+                <img src="imagenes/logo2.png" alt="Consulmarcas logo" class="brand-logo">
+            </a>
 
-<footer class="footer">
-    <div class="container">
+            <button id="menu-btn" class="menu-btn fade-up" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
 
-        <div class="footer-col"><h3>Sobre Nosotros</h3><p>Somos una firma especializada en distintas áreas del derecho...</p></div>
-
-        <div class="footer-col"><h3>Servicios</h3><p>Corporativo, Propiedad Intelectual, Laboral, Comercio Exterior...</p></div>
-
-        <div class="footer-col">
-            <h3>Contactos</h3>
-            <p>legal@consulmarcas.com</p>
-            <p>0960690007</p>
-            <p>Guayaquil, Víctor Manuel Rendón #600 y Escobedo</p>
+            <nav id="main-nav" class="main-nav fade-up">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="equipo.html">Nuestro Equipo</a></li>
+                    <li><a href="publicaciones.html" class="active">Publicaciones</a></li> 
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="areas.html">Áreas de Práctica</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="footer-col">
-            <h3>Síguenos</h3>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/company/consulmarcas/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://www.instagram.com/consulmarcas?igsh=MWNrdnQ1ajhqYXV2cQ==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://x.com/ConsulMarcas" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
+    <section class="publicaciones-hero fade-up">
+        <div class="publicaciones-hero-overlay"></div>
+        <div class="publicaciones-hero-inner container">
+            <p class="title-mantente fade-up auto-animate delay-1">MANTENTE INFORMADO</p>
+            <h1 class="pub-hero-title fade-up auto-animate delay-2">
+                Publicaciones <span class="title-consulmarcas">CONSULMARCAS</span>
+            </h1>
+            <span class="title-underline fade-up auto-animate delay-2"></span>
+        </div>
+    </section>
+
+    <section class="intro-publicaciones fade-up">
+        <div class="intro-publicaciones-grid">
+            <div class="pub-text">
+                <p>
+                    En CONSULMARCAS, creemos que estar al día con los desarrollos en el ámbito de la propiedad intelectual es fundamental para proteger los intereses de nuestros clientes.
+                </p>
+                <p>
+                    Por eso, publicamos regularmente artículos, informes, y noticias sobre las **últimas tendencias**, cambios legales, y casos relevantes en la industria.
+                </p>
+                <p>
+                    Nuestro equipo de expertos comparte su conocimiento y análisis para ayudar a nuestros clientes y al público en general a comprender mejor este complejo campo y tomar decisiones informadas.
+                </p>
+            </div>
+            <div class="pub-image-container fade-up delay-1">
+                <img src="imagenes/publicaciones.jpg" alt="Abogada de Consulmarcas investigando" title="Imagen que representa el conocimiento y la investigación">
+            </div>
+        </div>
+    </section>
+    
+    <section class="articles-list container" style="padding: 40px 20px;">
+        <h2 style="text-align: center; margin-bottom: 40px; font-size: 2em; color: #0d47a1;">Últimos Artículos y Noticias</h2>
+        </section>
+
+    <footer class="site-footer fade-up">
+        <div class="container footer-grid">
+            <div class="fade-up">
+                <h4>Sobre nosotros</h4>
+                <p>Somos una firma especializada en distintas áreas del derecho,
+    principalmente relacionado a todos los ejes de las empresas.
+    Somos más que abogados, somos aliados estratégicos para
+    el desarrollo de tu empresa.</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/consulmarcas/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/consulmarcas?igsh=MWNrdnQ1ajhqYXV2cQ=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/ConsulMarcas"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/consulmarcas/"><i class="fab fa-linkedin"></i></a>
+        
+                </div>
+            </div>
+
+            <div class="fade-up">
+                <h4>Contáctanos</h4>
+                <p><strong>Dirección:</strong> Víctor Manuel Rendón #600 y Escobedo, Edif. Bolívar</p>
+                <p><strong>Correo:</strong> legal@consucomlmarcas</p>
+                <p><strong>Tel:</strong> 0967800445</p>
             </div>
         </div>
 
-    </div>
-</footer>
+        <div class="footer-bottom fade-up">
+            <p>© 2025 Consulmarcas.</p>
+        </div>
+    </footer>
 
+    <div class="whatsapp-float fade-up" id="whatsappFloat" title="Escríbenos por WhatsApp">
+        <a href="https://api.whatsapp.com/send/?phone=593960690007&text&type=phone_number&app_absent=0" target="_blank" rel="noopener" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="JS/app.js"></script>
 </body>
 </html>

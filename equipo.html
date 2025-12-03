@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nuestro Equipo - Consulmarcas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nuestro Equipo - Consulmarcas</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/equipo.css">
+</head>
 <body>
 
-<header class="header">
-    <div class="logo"><img src="img/logo.png" alt="Logo Consulmarcas"></div>
-    <div class="hamburger" id="hamburger"><i class="fa fa-bars"></i></div>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="imagenes/logo2.png" alt="Consulmarcas Logo" class="brand-logo">
+      </a>
 
-    <nav class="nav" id="nav">
-        <div class="close-btn" id="close-btn"><i class="fa fa-times"></i></div>
+      <nav class="main-nav">
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienes.html">¿Quiénes Somos?</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a class="active" href="equipo.html">Nuestro Equipo</a></li>
-            <li><a href="publicaciones.html">Publicaciones</a></li>
-            <li><a href="contacto.html">Contáctanos</a></li>
-            <li><a href="areas.html">Áreas de Práctica</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="equipo.html" class="active">Nuestro Equipo</a></li>
+          <li><a href="publicaciones.html">Publicaciones</a></li>
+          <li><a href="contactanos.html">Contáctanos</a></li>
+          <li><a href="areas.html">Áreas de Práctica</a></li>
         </ul>
-    </nav>
-</header>
-
-<script>
-const ham = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
-const closeBtn = document.getElementById("close-btn");
-ham.onclick = () => nav.classList.add("open");
-closeBtn.onclick = () => nav.classList.remove("open");
-</script>
-
-<section class="content-section">
-    <div class="container">
-        <h1>Nuestro Equipo</h1>
-        <p>Conoce a los profesionales que forman parte de Consulmarcas.</p>
+      </nav>
     </div>
-</section>
+  </header>
 
-<footer class="footer">
-    <div class="container">
+  <!-- HERO -->
+  <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+          <h1>Conoce a Nuestro Equipo</h1>
+          <p>
+              Nuestro equipo está compuesto por profesionales altamente cualificados con amplia experiencia 
+              en todas las áreas del derecho. Han trabajado en casos de alto perfil, representando a clientes 
+              de diversas industrias y obteniendo resultados SOBRESALIENTES.
+          </p>
+      </div>
+  </section>
 
-        <div class="footer-col"><h3>Sobre Nosotros</h3><p>Somos una firma especializada en distintas áreas del derecho...</p></div>
+  <!-- CUADROS DEL EQUIPO -->
+  <section class="container">
+      <h2 class="section-title">Nuestro Equipo</h2>
 
-        <div class="footer-col"><h3>Servicios</h3><p>Corporativo, Propiedad Intelectual, Laboral, Comercio Exterior...</p></div>
+      <div class="contenedor-cards">
 
-        <div class="footer-col">
-            <h3>Contactos</h3>
-            <p>legal@consulmarcas.com</p>
-            <p>0960690007</p>
-            <p>Guayaquil, Víctor Manuel Rendón #600 y Escobedo</p>
+        <div class="card">
+            <h3>Hans Palma</h3>
         </div>
 
-        <div class="footer-col">
-            <h3>Síguenos</h3>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/company/consulmarcas/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://www.instagram.com/consulmarcas?igsh=MWNrdnQ1ajhqYXV2cQ==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://x.com/ConsulMarcas" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
-            </div>
+        <div class="card">
+            <h3>Isaac Cevallos Encalada</h3>
         </div>
 
-    </div>
-</footer>
+        <div class="card">
+            <h3>Helen Velasco Merino</h3>
+        </div>
+
+        <div class="card">
+            <h3>Adrián Coronel Drouet</h3>
+        </div>
+
+        <div class="card">
+            <h3>Julio Poveda</h3>
+        </div>
+
+        <div class="card">
+            <h3>Marielisa Guevara</h3>
+        </div>
+
+      </div>
+  </section>
 
 </body>
 </html>

@@ -6,18 +6,38 @@
   <title>Nuestro Equipo - Consulmarcas</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/equipo.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+  <div class="mobile-nav-overlay"></div>
+
+  <!-- Menú lateral móvil -->
+  <nav class="mobile-nav">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="equipo.html" class="active">Nuestro Equipo</a>
+    <a href="publicaciones.html">Publicaciones</a>
+    <a href="contactanos.html">Contáctanos</a>
+    <a href="areas.html">Áreas de Práctica</a>
+  </nav>
+
+  <button class="menu-btn simple">
+    <span></span><span></span><span></span>
+  </button>
+
   <!-- HEADER -->
-  <header class="site-header">
+  <header class="site-header fade-up">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="imagenes/logo2.png" alt="Consulmarcas Logo" class="brand-logo">
+      <a class="brand fade-up" href="index.html">
+        <img src="imagenes/logo2.png" alt="Consulmarcas logo" class="brand-logo">
       </a>
 
-      <nav class="main-nav">
+      <button id="menu-btn" class="menu-btn fade-up" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav fade-up">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
@@ -31,50 +51,61 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-          <h1>Conoce a Nuestro Equipo</h1>
-          <p>
-              Nuestro equipo está compuesto por profesionales altamente cualificados con amplia experiencia 
-              en todas las áreas del derecho. Han trabajado en casos de alto perfil, representando a clientes 
-              de diversas industrias y obteniendo resultados SOBRESALIENTES.
-          </p>
-      </div>
+  <section class="hero small-hero" style="background-image: url('imagenes/desarrollo-de-software-senati-1800-x-1190_0.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner container">
+      <h1 class="hero-title fade-up">Conoce a Nuestro Equipo</h1>
+      <p class="hero-sub fade-up">
+        Profesionales altamente cualificados con experiencia en diversas áreas del derecho.
+      </p>
+    </div>
   </section>
 
-  <!-- CUADROS DEL EQUIPO -->
-  <section class="container">
-      <h2 class="section-title">Nuestro Equipo</h2>
+  <!-- CONTENIDO DEL EQUIPO -->
+  <section class="container services area-practice">
+    <h2 class="section-title fade-up">Nuestro Equipo</h2>
 
-      <div class="contenedor-cards">
+    <p class="fade-up" style="max-width: 900px; margin: 0 auto 40px; text-align:center;">
+      Nuestro equipo está compuesto por profesionales altamente cualificados con amplia experiencia en todas las áreas del derecho. 
+      Han trabajado en casos de alto perfil obteniendo resultados sobresalientes.
+    </p>
 
-        <div class="card">
-            <h3>Hans Palma</h3>
-        </div>
+    <div class="services-grid">
 
-        <div class="card">
-            <h3>Isaac Cevallos Encalada</h3>
-        </div>
+      <article class="card fade-up" style="background:#ff8c3a; color:white;">
+        <h3>Hans Palma</h3>
+        <p>Especialista en derecho corporativo y propiedad intelectual.</p>
+      </article>
 
-        <div class="card">
-            <h3>Helen Velasco Merino</h3>
-        </div>
+      <article class="card fade-up" style="background:#ff8c3a; color:white;">
+        <h3>Isaac Cevallos Encalada</h3>
+        <p>Experto en derecho civil y mercantil, con amplia trayectoria jurídica.</p>
+      </article>
 
-        <div class="card">
-            <h3>Adrián Coronel Drouet</h3>
-        </div>
+      <article class="card fade-up" style="background:#ff8c3a; color:white;">
+        <h3>Helen Velasco Merino</h3>
+        <p>Profesional enfocada en mediación, arbitraje y resolución de conflictos.</p>
+      </article>
 
-        <div class="card">
-            <h3>Julio Poveda</h3>
-        </div>
+      <article class="card fade-up" style="background:#ff8c3a; color:white;">
+        <h3>Adrián Coronel Drouet</h3>
+        <p>Especialista en derecho penal, litigio estratégico y defensa procesal.</p>
+      </article>
 
-        <div class="card">
-            <h3>Marielisa Guevara</h3>
-        </div>
+      <article class="card fade-up" style="background:#ff8c3a; color:white;">
+        <h3>Julio Poveda</h3>
+        <p>Amplia experiencia en derecho laboral y negociación colectiva.</p>
+      </article>
 
-      </div>
+      <article class="card fade-up" style="background:#ff8c3a; color:white;">
+        <h3>Marielisa Guevara</h3>
+        <p>Especialista en protección de datos, publicidad y normativa digital.</p>
+      </article>
+
+    </div>
   </section>
 
+  <script src="JS/app.js"></script>
 </body>
 </html>
+

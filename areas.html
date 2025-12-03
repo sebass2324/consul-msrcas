@@ -1,73 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Áreas de Práctica - Consulmarcas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Áreas de Práctica - Consulmarcas</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
 
-<header class="header">
-    <div class="logo"><img src="img/logo.png" alt="Logo Consulmarcas"></div>
-    <div class="hamburger" id="hamburger"><i class="fa fa-bars"></i></div>
+  <div class="mobile-nav-overlay"></div>
 
-    <nav class="nav" id="nav">
-        <div class="close-btn" id="close-btn"><i class="fa fa-times"></i></div>
+  <!-- Menú lateral móvil -->
+  <nav class="mobile-nav">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="equipo.html">Nuestro Equipo</a>
+    <a href="publicaciones.html">Publicaciones</a>
+    <a href="contactanos.html">Contáctanos</a>
+    <a href="areas.html">Áreas de Práctica</a>
+  </nav>
+
+  <button class="menu-btn simple">
+      <span></span><span></span><span></span>
+  </button>
+
+  <!-- HEADER -->
+  <header class="site-header fade-up">
+    <div class="container header-inner">
+      <a class="brand fade-up" href="index.html">
+        <img src="imagenes/logo2.png" alt="Consulmarcas logo" class="brand-logo">
+      </a>
+
+      <button id="menu-btn" class="menu-btn fade-up" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav fade-up">
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="quienes.html">¿Quiénes Somos?</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="equipo.html">Nuestro Equipo</a></li>
-            <li><a href="publicaciones.html">Publicaciones</a></li>
-            <li><a href="contacto.html">Contáctanos</a></li>
-            <li><a class="active" href="areas.html">Áreas de Práctica</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="equipo.html">Nuestro Equipo</a></li>
+          <li><a href="publicaciones.html">Publicaciones</a></li>
+          <li><a href="contactanos.html">Contáctanos</a></li>
+          <li><a href="areas.html" class="active">Áreas de Práctica</a></li>
         </ul>
-    </nav>
-</header>
-
-<script>
-const ham = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
-const closeBtn = document.getElementById("close-btn");
-ham.onclick = () => nav.classList.add("open");
-closeBtn.onclick = () => nav.classList.remove("open");
-</script>
-
-<section class="content-section">
-    <div class="container">
-        <h1>Áreas de Práctica</h1>
-        <p>Descubre nuestras áreas especializadas en derecho y consultoría profesional.</p>
+      </nav>
     </div>
-</section>
+  </header>
 
-<footer class="footer">
-    <div class="container">
+  <!-- HERO -->
+  <section class="hero small-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner container">
+      <h1 class="hero-title fade-up">Áreas de Práctica</h1>
+      <p class="hero-sub fade-up">Conocimiento profundo, experiencia y estrategia para cada necesidad legal.</p>
+    </div>
+  </section>
 
-        <div class="footer-col"><h3>Sobre Nosotros</h3><p>Somos una firma especializada en distintas áreas del derecho...</p></div>
+  <!-- CONTENIDO -->
+  <section class="container services area-practice">
 
-        <div class="footer-col"><h3>Servicios</h3><p>Corporativo, Propiedad Intelectual, Laboral, Comercio Exterior...</p></div>
+    <h2 class="section-title fade-up">Nuestras áreas especializadas</h2>
 
-        <div class="footer-col">
-            <h3>Contactos</h3>
-            <p>legal@consulmarcas.com</p>
-            <p>0960690007</p>
-            <p>Guayaquil, Víctor Manuel Rendón #600 y Escobedo</p>
-        </div>
+    <div class="services-grid">
 
-        <div class="footer-col">
-            <h3>Síguenos</h3>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/company/consulmarcas/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://www.instagram.com/consulmarcas?igsh=MWNrdnQ1ajhqYXV2cQ==" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://x.com/ConsulMarcas" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
-            </div>
-        </div>
+      <article class="card fade-up">
+        <h3>Propiedad Intelectual</h3>
+        <p>
+          Ofrecemos asesoría en registro de marcas, patentes, derechos de autor, diseños industriales y defensa ante infracciones. También gestionamos contratos de cesión y licencias.
+        </p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Civil</h3>
+        <p>Asesoría en contratos, responsabilidad civil, propiedad, herencias y otros asuntos personales y familiares.</p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Comercio Internacional</h3>
+        <p>
+          Asistencia en contratos internacionales, cumplimiento normativo, aduanas y solución de disputas comerciales transfronterizas.
+        </p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Competencia</h3>
+        <p>
+          Asesoría en prácticas comerciales justas, procedimientos regulatorios y defensa en casos de competencia desleal.
+        </p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Contratación Pública</h3>
+        <p>
+          Acompañamiento en procesos de licitaciones, revisión de pliegos, cumplimiento normativo y resolución de controversias.
+        </p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Fusiones y Adquisiciones</h3>
+        <p>
+          Asesoría integral desde la due diligence hasta el cierre de acuerdos, garantizando eficiencia y minimizando riesgos.
+        </p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Laboral</h3>
+        <p>
+          Asesoría en contratación, despidos, negociaciones colectivas y defensa en conflictos laborales para empleadores y empleados.
+        </p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Mediación y Resolución de Conflictos</h3>
+        <p>
+          Soluciones rápidas y efectivas mediante mediación, arbitraje y otros métodos alternativos al litigio tradicional.
+        </p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Protección de Datos Personales</h3>
+        <p>
+          Implementación de políticas, cumplimiento normativo y asesoría ante brechas de seguridad en manejo de información.
+        </p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Publicitario y Mercadeo</h3>
+        <p>
+          Asesoría en regulación y cumplimiento de normas para campañas publicitarias y estrategias de mercadeo.
+        </p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Societario y Mercantil</h3>
+        <p>
+          Gestión, constitución y reestructuración de empresas, además de redacción y negociación de contratos mercantiles.
+        </p>
+      </article>
+
+      <article class="card fade-up">
+        <h3>Penal</h3>
+        <p>
+          Defensa en casos penales, representación en investigaciones, juicios y apelaciones, buscando siempre la mejor estrategia legal.
+        </p>
+      </article>
 
     </div>
-</footer>
+  </section>
 
+  <script src="JS/app.js"></script>
 </body>
 </html>

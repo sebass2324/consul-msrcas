@@ -6,7 +6,7 @@
     <title>Consulmarcas - Contáctanos</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style_contactos.css">
      <link rel="stylesheet" href="css/contactos.css"> </head>
 
 <body>
@@ -108,40 +108,65 @@
         </section>
 
         <section class="contact-form-section">
-            <div class="form-container fade-up">
-                <div class="form-header">
-                    <h2>Envíanos un Mensaje</h2>
-                    <p>Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
-                </div>
-                <form class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group"><label for="name">Nombre Completo</label><input type="text" id="name" name="name" required></div>
-                        <div class="form-group"><label for="email">Correo Electrónico</label><input type="email" id="email" name="email" required></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group"><label for="phone">Teléfono</label><input type="tel" id="phone" name="phone"></div>
-                        <div class="form-group">
-                            <label for="service">Servicio de Interés</label>
-                            <select id="service" name="service" required>
-                                <option value="">Seleccione un servicio</option>
-                                <option value="marcas">Registro de Marcas</option>
-                                <option value="patentes">Patentes e Innovación</option>
-                                <option value="defensa">Litigios y Resolución de Disputas</option>
-                                <option value="consultoria">Consultoría y Estrategia</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">
-                        <span>Enviar Mensaje</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
-        </section>
+  <div class="form-container fade-up">
+    <div class="form-header">
+      <h2>Envíanos un Mensaje</h2>
+      <p>Recibirás una copia de tu mensaje automáticamente.</p>
+    </div>
+
+    <form class="contact-form" action="https://formsubmit.co/legal@consulmarcas.com" method="POST">
+
+      <!-- Configuración -->
+      <input type="hidden" name="_subject" value="📩 Copia de tu mensaje enviado">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="index.html">
+      <input type="hidden" name="_copy" value="true">
+
+      <!-- Inputs con tus mismas clases -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Nombre Completo</label>
+          <input type="text" id="name" name="Nombre_Completo" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" name="Telefono">
+        </div>
+
+        <div class="form-group">
+          <label for="service">Servicio de Interés</label>
+          <select id="service" name="Servicio_Interes" required>
+            <option value="">Seleccione un servicio</option>
+            <option value="Registro_Marcas">Registro de Marcas</option>
+            <option value="Patentes">Patentes e Innovación</option>
+            <option value="Litigios">Resolución de Disputas</option>
+            <option value="Consultoria">Consultoría Legal</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="Mensaje" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        <span>Enviar Mensaje</span>
+        <i class="fas fa-paper-plane"></i>
+      </button>
+
+    </form>
+  </div>
+</section>
+
     </main>
 
     <footer class="site-footer fade-up">
@@ -153,10 +178,10 @@
     Somos más que abogados, somos aliados estratégicos para
     el desarrollo de tu empresa.</p>
                 <div class="socials">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/consulmarcas/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/consulmarcas?igsh=MWNrdnQ1ajhqYXV2cQ=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/ConsulMarcas"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/consulmarcas/"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
 

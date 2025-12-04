@@ -52,6 +52,8 @@ margin: 0;}
     margin-bottom: 15px;
 }
 
+.cta {margin-top: 30px;}
+
 .gradient-text {
     color: var(--secondary-color); 
 }
@@ -69,7 +71,7 @@ margin: 0;}
 .contact-hero-image img {
     max-width: 80%;
     height: auto;
-    margin-top: 40px;
+    margin-top: 50px;
     border-radius: 10px;
     box-shadow: var(--shadow-deep);
 }

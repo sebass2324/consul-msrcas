@@ -22,7 +22,7 @@
 
 /* ===== HERO BANNER AZUL (estilo parecido a la imagen roja) ===== */
 .publicaciones-hero{
-  background: linear-gradient(135deg, #0667d6 0%, #0b2340 60%);
+  background-image: url('../imagenes/desarrollo-de-software-senati-1800-x-1190_0.jpg');
   background-size: cover;
   color: #fff;
   padding: 72px 18px;

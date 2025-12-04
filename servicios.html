@@ -1,180 +1,47 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios - Consulmarcas</title>
-
-  <!-- Estilos locales -->
-  <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Librerías externas -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-</head>
-
-<body>
-
-  <!-- Overlay (solo móvil) -->
-  <div class="mobile-nav-overlay"></div>
-
-  <!-- Menú lateral (solo móvil) -->
-  <nav class="mobile-nav">
-    <a href="index.html">Inicio</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="equipo.html">Nuestro Equipo</a>
-    <a href="publicaciones.html">Publicaciones</a>
-    <a href="contacto.html">Contáctanos</a>
-    <a href="areas.html">Áreas de Práctica</a>
-  </nav>
-
-  <!-- HEADER (PC sin cambios) -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="imagenes/logo2.png" alt="Consulmarcas logo" class="brand-logo">
-      </a>
-
-      <!-- Botón hamburguesa (solo visible en móvil por CSS) -->
-      <button id="mobile-menu-btn" class="menu-btn" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
-
-      <!-- Menú escritorio (PC intacto) -->
-      <nav id="main-nav" class="main-nav">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="equipo.html">Nuestro Equipo</a></li>
-          <li><a href="publicaciones.html">Publicaciones</a></li>
-          <li><a href="contacto.html">Contáctanos</a></li>
-          <li><a href="areas.html">Áreas de Práctica</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero2" id="hero2">
-    <div class="hero-overlay"></div>
-
-    <div class="hero-inner container">
-      <h1 class="hero-title2 fade-up auto-animate delay-1">Nuestros Servicios</h1>
-      <p class="hero-sub2 fade-up auto-animate delay-2">Protección legal inteligente para marcas, patentes y más.
-
-      <button class="scroll-down fade-up delay-3" id="scrollDown" aria-label="Bajar"> 
-        <i class="fas fa-chevron-down"></i>
-      </button>
-    </div>
-  </section>
-
-  <!-- CARRUSEL -->
-  <section class="services-section">
-    <div id="owl-services" class="owl-carousel owl-theme">
-      <div class="service-card"><div class="service-icon"><i class="fas fa-trademark"></i></div><h3>Registro de Marcas</h3><p>Desde búsqueda hasta seguimiento legal.</p></div>
-      <div class="service-card"><div class="service-icon"><i class="fas fa-cogs"></i></div><h3>Patentes</h3><p>Protegemos tu innovación.</p></div>
-      <div class="service-card"><div class="service-icon"><i class="fas fa-book"></i></div><h3>Derechos de Autor</h3><p>Defensa de obras y creaciones.</p></div>
-      <div class="service-card"><div class="service-icon"><i class="fas fa-shield-alt"></i></div><h3>Defensa Legal</h3><p>Litigios en propiedad intelectual.</p></div>
-      <div class="service-card"><div class="service-icon"><i class="fas fa-lightbulb"></i></div><h3>Consultoría</h3><p>Estrategias personalizadas.</p></div>
-      <div class="service-card"><div class="service-icon"><i class="fas fa-file-contract"></i></div><h3>Licencias</h3><p>Contratos y negociación.</p></div>
-    </div>
-  </section>
-
-  <!-- ¿POR QUÉ ELEGIRNOS? -->
-  <section class="about-hero philosophy">
-    <div class="about-title-container">
-      <span class="about-span">¿Por qué elegirnos?</span>
-      <h1 class="about-title">Sabemos la importancia de elegir a tu <span class="about-span">abogado de confianza</span></h1>
-    </div>
-
-    <div class="about-hero-flex">
-      <img src="imagenes/servicos.jpg" alt="Nuestra filosofía">
-      <div class="about-hero-content">
-        <p>Elegir ConsulMarcas significa optar por:</p>
-        <ul class="benefits-list">
-          <li><i class="fas fa-check-circle"></i><div><h3>Especialización Comprobada</h3><p>Nos enfocamos en lo que mejor hacemos: proteger y potenciar tus activos legales con un equipo experto en propiedad intelectual y derecho empresarial</p></div></li>
-          <li><i class="fas fa-check-circle"></i><div><h3>Resultados Garantizados</h3><p>Nuestra experiencia y dedicación nos han llevado a alcanzar altos índices de éxito en cada caso.</p></div></li>
-          <li><i class="fas fa-check-circle"></i><div><h3>Atención Personalizada</h3><p>Entendemos que cada cliente es único, por lo que adaptamos nuestras estrategias a tus necesidades específicas.</p></div></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER (igual al index, corregido y sin cambios visuales) -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>Sobre nosotros</h4>
-        <p>Somos una firma especializada en distintas áreas del derecho,
-principalmente relacionado a todos los ejes de las empresas.
-Somos más que abogados, somos aliados estratégicos para
-el desarrollo de tu empresa.</p>
-
-        <div class="socials">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-
-      <div>
-        <h4>Contáctanos</h4>
-        <p><strong>Dirección:</strong> Víctor Manuel Rendón #600 y Escobedo, Edif. Bolívar</p>
-        <p><strong>Correo:</strong> legal@consucomlmarcas</p>
-        <p><strong>Tel:</strong> 0967800445</p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2025 Consulmarcas.</p>
-    </div>
-  </footer>
-
-  <!-- WhatsApp float -->
-  <div class="whatsapp-float" id="whatsappFloat">
-    <a href="https://wa.me/591967800445" target="_blank" rel="noopener" class="whatsapp-link">
-      <i class="fab fa-whatsapp"></i>
-    </a>
+<!-- ¿POR QUÉ ELEGIRNOS? -->
+<section class="about-hero philosophy" style="padding: 50px 0;">
+  <div class="about-title-container" style="text-align: center; margin-bottom: 40px;">
+    <span class="about-span" style="color: #c47b00; font-weight: bold;">¿Por qué elegirnos?</span>
+    <h1 class="about-title" style="font-size: 32px; font-weight: 700; margin-top: 10px;">
+      Sabemos la importancia de elegir a tu 
+      <span style="color: #c47b00;">abogado de confianza</span>
+    </h1>
   </div>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <div class="about-hero-flex" style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap; justify-content: center;">
 
-  <script>
-    $(document).ready(function(){
-      $("#owl-services").owlCarousel({
-        margin: 18,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 3400,
-        responsive:{
-          0:{ items:1 },
-          600:{ items:2 },
-          1000:{ items:3 }
-        }
-      });
-    });
+    <img src="imagenes/servicos.jpg" alt="Nuestra filosofía" 
+      style="width: 420px; border-radius: 15px;">
 
-    // Menú lateral solo móvil (sin afectar PC)
-    const btn = document.getElementById("mobile-menu-btn");
-    const menu = document.querySelector(".mobile-nav");
-    const overlay = document.querySelector(".mobile-nav-overlay");
+    <div class="about-hero-content" style="max-width: 500px;">
+      <p style="font-size: 18px; margin-bottom: 20px;">
+        Elegir ConsulMarcas significa optar por:
+      </p>
 
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("open");
-      overlay.classList.toggle("show");
-    });
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li style="margin-bottom: 20px; padding-left: 0;">
+          <h3 style="margin: 0; font-size: 20px; font-weight: 700;">Especialización Comprobada</h3>
+          <p style="margin: 5px 0 0;">
+            Nos enfocamos en lo que mejor hacemos: proteger y potenciar tus activos legales con un equipo experto en propiedad intelectual y derecho empresarial.
+          </p>
+        </li>
 
-    overlay.addEventListener("click", () => {
-      menu.classList.remove("open");
-      overlay.class.remove("show");
-    });
-  </script>
+        <li style="margin-bottom: 20px; padding-left: 0;">
+          <h3 style="margin: 0; font-size: 20px; font-weight: 700;">Resultados Garantizados</h3>
+          <p style="margin: 5px 0 0;">
+            Nuestra experiencia y dedicación nos han llevado a alcanzar altos índices de éxito en cada caso.
+          </p>
+        </li>
 
-  <script src="JS/app.js"></script>
+        <li style="margin-bottom: 20px; padding-left: 0;">
+          <h3 style="margin: 0; font-size: 20px; font-weight: 700;">Atención Personalizada</h3>
+          <p style="margin: 5px 0 0;">
+            Entendemos que cada cliente es único, por lo que adaptamos nuestras estrategias a tus necesidades específicas.
+          </p>
+        </li>
 
-</body>
-</html>
+      </ul>
+    </div>
+
+  </div>
+</section>

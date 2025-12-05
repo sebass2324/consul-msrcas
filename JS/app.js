@@ -85,3 +85,30 @@ const btn = document.querySelector(".menu-btn");
     menu.classList.remove("active");
     overlay.classList.remove("active");
   });
+
+  document.getElementById("subscribeForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    // URL a la que se envía
+    const url = "https://formsubmit.co/consulmarcas@gmail.com";
+
+    // Opciones de FormSubmit
+    data.append("_captcha", "false");
+    data.append("_template", "table");
+    data.append("_autoresponse", "Gracias por registrarte. Hemos recibido tu información.");
+
+    // Enviar
+    await fetch(url, {
+        method: "POST",
+        body: data
+    });
+
+    // Confirmación instantánea al usuario
+    alert("¡Registro enviado con éxito!");
+
+    // Limpiar formulario
+    form.reset();
+});
